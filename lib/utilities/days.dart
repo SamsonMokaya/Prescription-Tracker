@@ -18,7 +18,7 @@ class days extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
                 width: 2.0,
-                color: Colors.grey,
+                color: Color.fromARGB(255, 17, 2, 71),
               ),
             ),
             height: 60,
@@ -27,7 +27,7 @@ class days extends StatelessWidget {
               child: Text(
                 text,
                 style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    TextStyle(color: Color.fromARGB(255, 17, 2, 71), fontWeight: FontWeight.bold),
               ),
             ),
           ),

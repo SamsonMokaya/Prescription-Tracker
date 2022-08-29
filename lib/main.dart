@@ -13,6 +13,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+      void _addNewPrescription(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (_){
+        return Text("data");
+      },
+    );
+  }
+
     var textColor = Colors.black;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -44,8 +53,24 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: HomePage(),
-        bottomNavigationBar: BottomAppBar(
-          
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Color.fromARGB(255, 17, 2, 71),
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+            
+            ),
+          onPressed: () {
+            showModalBottomSheet(
+              context: context,
+              builder: (context){
+                return Column(
+                  
+                );
+              },
+            );
+          }
         ),
       ),
     );

@@ -132,10 +132,9 @@ class _HomePageState extends State<HomePage> {
 
                     //prescriptions
                     prescription(medicine: 'Paracetamol',),
-                    // prescription(),
-                    // prescription(),
-                    // prescription(),
-                    // prescription(),
+                    prescription(medicine: 'Paracetamol',),
+                    prescription(medicine: 'Paracetamol',),
+                    prescription(medicine: 'Paracetamol',),
                   ],
                 ),
               ),
